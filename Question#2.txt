@@ -1,0 +1,21 @@
+lib.rs:
+
+#![allow(dead_code)]
+
+pub mod Office {
+    pub mod working{
+       pub fn todays_task(){
+           println!("Adnan is going to conduct a meeting today")
+       }
+   }
+}
+
+main.rs:
+
+use library::Office;
+
+
+fn main() {
+    
+    Office::working::todays_task();
+}

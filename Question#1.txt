@@ -1,0 +1,17 @@
+main.rs :
+
+ mod Office {
+     pub mod working{
+        pub fn todays_task(){
+            println!("Adnan is going to conduct a meeting today")
+        }
+    }
+}
+
+
+
+
+fn main() {
+    
+    crate::Office::working::todays_task();
+}
